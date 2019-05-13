@@ -2,12 +2,21 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2019/03/18 19:43:48.000.056,=C:\Users\lukas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2019/04/15 19:36:32.959,=C:\Users\lukas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2019/04/15 19:36:56.714,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\uMain.pas=C:\Users\lukas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2019/04/15 19:36:56.714,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\uMain.fmx=C:\Users\lukas\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2019/04/15 19:37:07.071,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\ConsutaPrecosPostos.dproj=C:\Users\lukas\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/04/15 19:36:32.000.959,=C:\Users\lukas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/04/15 19:36:56.000.714,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\uMain.fmx=C:\Users\lukas\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2019/04/15 19:36:56.000.714,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\uMain.pas=C:\Users\lukas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/04/15 19:37:07.000.071,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\ConsutaPrecosPostos.dproj=C:\Users\lukas\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/04/22 20:37:30.000.082,=C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\Unit1.pas</Transaction>
+    <Transaction>2019/04/22 20:37:49.000.061,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\Unit1.fmx=C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\uLogin.fmx</Transaction>
+    <Transaction>2019/04/22 20:37:49.000.061,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\Unit1.pas=C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\uLogin.pas</Transaction>
+    <Transaction>2019/05/13 19:36:48.509,=C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\Unit1.pas</Transaction>
+    <Transaction>2019/05/13 19:37:12.626,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\uCadastroUsuario.pas=C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\Unit1.pas</Transaction>
+    <Transaction>2019/05/13 19:37:12.626,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\uCadastroUsuario.fmx=C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\Unit1.fmx</Transaction>
+    <Transaction>2019/05/13 20:06:25.723,=C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\Unit1.pas</Transaction>
+    <Transaction>2019/05/13 20:06:40.436,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\uDM.dfm=C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\Unit1.dfm</Transaction>
+    <Transaction>2019/05/13 20:06:40.436,C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\uDM.pas=C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\Unit1.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile iOSSimulator="iPhone5"/>
+		<NoProfile iOSSimulator="iPhone5" Android="330009889b2dc2b1"/>
 	</ActiveMobileDevice>
 </BorlandProject>

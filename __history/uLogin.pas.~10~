@@ -1,0 +1,51 @@
+unit uLogin;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Edit, FMX.Layouts;
+
+type
+  TFLogin = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    ToolBar1: TToolBar;
+    lbAppName: TLabel;
+    btLogin: TButton;
+    btCadastrar: TButton;
+    ToolBar2: TToolBar;
+    Label3: TLabel;
+    Layout1: TLayout;
+    procedure btCadastrarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FLogin: TFLogin;
+
+implementation
+
+{$R *.fmx}
+
+uses uCadastroUsuario, uDM, uMain;
+
+procedure TFLogin.btCadastrarClick(Sender: TObject);
+begin
+  if not Assigned(FCadastroUsuario) then
+    FCadastroUsuario := TFCadastroUsuario.Create(nil);
+  FCadastroUsuario.ShowModal(
+    procedure(ModalResult: TModalResult)
+    begin
+
+    end);
+end;
+
+end.

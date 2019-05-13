@@ -1,0 +1,16 @@
+program ConsutaPrecosPostos;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  uMain in 'uMain.pas' {FMain},
+  uLogin in 'uLogin.pas' {FLogin};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFLogin, FLogin);
+  Application.CreateForm(TFMain, FMain);
+  Application.Run;
+end.

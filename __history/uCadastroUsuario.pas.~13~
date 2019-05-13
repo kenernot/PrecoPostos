@@ -1,0 +1,68 @@
+unit uCadastroUsuario;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.Layouts, FMX.StdCtrls, FMX.Controls.Presentation;
+
+type
+  TFCadastroUsuario = class(TForm)
+    Layout1: TLayout;
+    Label1: TLabel;
+    edNome: TEdit;
+    Label2: TLabel;
+    edUsuario: TEdit;
+    Label3: TLabel;
+    edTelefone: TEdit;
+    edCpf: TEdit;
+    edSenha: TEdit;
+    edEmail: TEdit;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    edConfirmarSenha: TEdit;
+    ToolBar1: TToolBar;
+    lbAppName: TLabel;
+    ToolBar2: TToolBar;
+    Label8: TLabel;
+    btSalvar: TSpeedButton;
+    btVoltar: TSpeedButton;
+    procedure btVoltarClick(Sender: TObject);
+    function verificarCampos:boolean;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FCadastroUsuario: TFCadastroUsuario;
+
+implementation
+
+{$R *.fmx}
+
+uses uDM, uLogin, uMain;
+
+procedure TFCadastroUsuario.btVoltarClick(Sender: TObject);
+begin
+  if not Assigned(FLogin) then
+    FLogin := TFLogin.Create(nil);
+  FLogin.ShowModal(
+    procedure(ModalResult: TModalResult)
+    begin
+
+    end);
+end;
+
+function TFCadastroUsuario.verificarCampos: boolean;
+begin
+//
+
+end;
+
+end.

@@ -1,0 +1,267 @@
+object FCadastroUsuario: TFCadastroUsuario
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 531
+  ClientWidth = 321
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 321.000000000000000000
+    Size.Height = 466.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Margins.Top = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'NOME COMPLETO'
+      TabOrder = 1
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 8
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 35.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 10
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 291.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Label2: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 133.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'TELEFONE'
+      TabOrder = 11
+    end
+    object Edit3: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 12
+      KeyboardType = PhonePad
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 163.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Label3: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 261.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'USUARIO'
+      TabOrder = 13
+    end
+    object Edit4: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 2
+      KeyboardType = NumberPad
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 99.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Edit5: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 5
+      Password = True
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 355.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Edit6: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 9
+      KeyboardType = EmailAddress
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 227.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Label4: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 69.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'CPF'
+      TabOrder = 0
+    end
+    object Label5: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 197.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'E-MAIL'
+      TabOrder = 3
+    end
+    object Label6: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 325.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'SENHA'
+      TabOrder = 7
+    end
+    object Label7: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 389.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'CONFIMAR SENHA'
+      TabOrder = 6
+    end
+    object Edit7: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 4
+      Password = True
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 419.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 321.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object lbAppName: TLabel
+      Align = Center
+      AutoSize = True
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 184.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Pre'#231'o Baixo Pna'
+      TabOrder = 1
+    end
+  end
+  object ToolBar2: TToolBar
+    Position.Y = 30.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Label8: TLabel
+      Align = Center
+      AutoSize = True
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 184.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Realize seu cadastro'
+      TabOrder = 0
+    end
+    object SpeedButton1: TSpeedButton
+      Align = Right
+      Position.X = 256.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'forwardtoolbutton'
+      Text = 'SpeedButton1'
+    end
+    object SpeedButton2: TSpeedButton
+      Align = Left
+      Size.Width = 73.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+      Text = 'SpeedButton2'
+    end
+  end
+end

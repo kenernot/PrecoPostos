@@ -1,0 +1,61 @@
+unit uCadastroUsuario;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.Layouts, FMX.StdCtrls, FMX.Controls.Presentation;
+
+type
+  TFCadastroUsuario = class(TForm)
+    Layout1: TLayout;
+    Label1: TLabel;
+    Edit1: TEdit;
+    Label2: TLabel;
+    Edit2: TEdit;
+    Label3: TLabel;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Edit7: TEdit;
+    ToolBar1: TToolBar;
+    lbAppName: TLabel;
+    ToolBar2: TToolBar;
+    Label8: TLabel;
+    btSalvar: TSpeedButton;
+    btVoltar: TSpeedButton;
+    procedure btVoltarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FCadastroUsuario: TFCadastroUsuario;
+
+implementation
+
+{$R *.fmx}
+
+uses uDM, uLogin, uMain;
+
+procedure TFCadastroUsuario.btVoltarClick(Sender: TObject);
+begin
+  if not Assigned(FLogin) then
+    FLogin := TFLogin.Create(nil);
+  FLogin.ShowModal(
+    procedure(ModalResult: TModalResult)
+    begin
+
+    end);
+end;
+
+end.

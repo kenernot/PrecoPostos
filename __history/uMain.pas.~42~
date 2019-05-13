@@ -1,0 +1,171 @@
+unit uMain;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, FMX.ListView.Types,
+  FMX.ListView.Appearances, FMX.ListView.Adapters.Base, FMX.ListView,
+  FMX.Objects, FMX.MultiView, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.FMXUI.Wait,
+  Data.DB, FireDAC.Comp.Client, System.IOUtils, FireDAC.Phys.SQLite,
+  FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs;
+
+type
+  TFMain = class(TForm)
+    ToolBarMain: TToolBar;
+    lbAppName: TLabel;
+    LayoutMain: TLayout;
+    MultiViewMain: TMultiView;
+    RectangleImg: TRectangle;
+    RectangleLogin: TRectangle;
+    RectangleCadastro: TRectangle;
+    RectangleConsulta: TRectangle;
+    RectangleIndex: TRectangle;
+    ImageLogo: TImage;
+    LabelLogin: TLabel;
+    LabelCadastro: TLabel;
+    LabelConsulta: TLabel;
+    LabelIndex: TLabel;
+    procedure FDConnection1BeforeConnect(Sender: TObject);
+    procedure FDConnection1AfterConnect(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure RectangleLoginClick(Sender: TObject);
+    procedure RectangleCadastroClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FMain: TFMain;
+
+implementation
+
+{$R *.fmx}
+
+uses uCadastroUsuario, uLogin, uDM;
+
+procedure TFMain.FDConnection1AfterConnect(Sender: TObject);
+var
+  strSQL: String;
+begin
+  strSQL := //
+    'CREATE TABLE IF NOT EXISTS usuario(' + //
+    '       idUsuario INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,' + //
+    '       nome VARCHAR(30),' + //
+    '       cpf VARCHAR(11),' + //
+    '       usuario VARCHAR(15),' + //
+    '       telefone VARCHAR(11),' + //
+    '       email VARCHAR(40),' + //
+    '       senha VARCHAR(65)' + //
+    ');';
+  FDConnection1.ExecSQL(strSQL);
+
+  strSQL := EmptyStr;
+  strSQL := //
+    'CREATE TABLE IF NOT EXISTS bandeiraPosto(' + //
+    '       idBandeiraPosto INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,' + //
+    '       descricao VARCHAR(40)' + //
+    ');';
+  FDConnection1.ExecSQL(strSQL);
+
+  strSQL := EmptyStr;
+
+  strSQL := //
+    'CREATE TABLE IF NOT EXISTS bandeira(' + //
+    '       idBandeira INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,' + //
+    '       latitude VARCHAR(17),' + //
+    '       longitude VARCHAR(17)' + //
+    ');';
+  FDConnection1.ExecSQL(strSQL);
+
+  strSQL := EmptyStr;
+
+  strSQL := //
+    'CREATE TABLE IF NOT EXISTS posto(' + //
+    '       idPosto INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,' + //
+    '       idBandeira INTEGER,' + //
+    '       nome VARCHAR(50),' + //
+    '       enderco VARCHAR(50),' + //
+    '       telefone VARCHAR(11),' + //
+    '       FOREIGN KEY (idBandeira) REFERENCES bandeira(idBandeira)' + //
+    ');';
+  FDConnection1.ExecSQL(strSQL);
+
+  strSQL := EmptyStr;
+
+  strSQL := //
+    'CREATE TABLE IF NOT EXISTS combustivel(' + //
+    '       idCombustivel INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,' + //
+    '       descricao VARCHAR(45)' + //
+    ');';
+  FDConnection1.ExecSQL(strSQL);
+
+  strSQL := EmptyStr;
+
+  strSQL := //
+    'CREATE TABLE IF NOT EXISTS precoPosto(' + //
+    '       idPrecoPosto INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,' + //
+    '       idPosto INTEGER,' + //
+    '       idCombustivel INTEGER,' + //
+    '       data DATE,' + //
+    '       fotoPlaca BLOB,' + //
+    '       valor DECIMAL(8,2),' + //
+    '       FOREIGN KEY (idPosto) REFERENCES posto(idPosto),' + //
+    '       FOREIGN KEY (idCombustivel) REFERENCES combustivel(idCombustivel)' +
+  //
+    ');';
+  FDConnection1.ExecSQL(strSQL);
+
+  strSQL := EmptyStr;
+end;
+
+procedure TFMain.FDConnection1BeforeConnect(Sender: TObject);
+var
+  strPath: String;
+begin
+{$IFDEF MSWINDOWS}
+  strPath := System.IOUtils.TPath.Combine
+    ('C:\Aulas Faculdade\3_ANO\MOBILE\ConsultaPrecosPostos\db',
+    'precoposto.db');
+{$ENDIF}
+{$IF DEFINED(iOS) or DEFINED(ANDROID)}
+  strPath := System.IOUtils.TPath.Combine(System.IOUtils.TPath.GetDocumentsPath,
+    'precoposto.db');
+{$ENDIF}
+  FDConnection1.Params.Values['DATABASE'] := strPath;
+end;
+
+procedure TFMain.FormCreate(Sender: TObject);
+begin
+  FDConnection1.Connected := true;
+end;
+
+procedure TFMain.RectangleCadastroClick(Sender: TObject);
+begin
+  if not Assigned(FCadastroUsuario) then
+    FCadastroUsuario := TFCadastroUsuario.Create(nil);
+  FCadastroUsuario.ShowModal(
+    procedure(ModalResult: TModalResult)
+    begin
+
+    end);
+end;
+
+procedure TFMain.RectangleLoginClick(Sender: TObject);
+begin
+  if not Assigned(FLogin) then
+    FLogin := TFLogin.Create(nil);
+  FLogin.ShowModal(
+    procedure(ModalResult: TModalResult)
+    begin
+
+    end);
+end;
+
+end.

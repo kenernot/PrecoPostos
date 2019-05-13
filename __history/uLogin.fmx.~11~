@@ -1,0 +1,122 @@
+object FLogin: TFLogin
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 396
+  ClientWidth = 329
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 65.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Login:'
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 145.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Senha:'
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 2
+    Position.X = 20.000000000000000000
+    Position.Y = 115.000000000000000000
+    Margins.Left = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 3
+    Position.X = 20.000000000000000000
+    Position.Y = 195.000000000000000000
+    Margins.Left = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 329.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object lbAppName: TLabel
+      Align = Center
+      AutoSize = True
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 184.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Pre'#231'o Baixo Pna'
+      TabOrder = 1
+    end
+  end
+  object btLogin: TButton
+    Align = Top
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 245.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Entrar'
+  end
+  object btCadastrar: TButton
+    Align = Top
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 295.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Cadastrar'
+  end
+  object ToolBar2: TToolBar
+    Position.Y = 30.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    object Label3: TLabel
+      Align = Center
+      AutoSize = True
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 184.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Realize seu login'
+      TabOrder = 1
+    end
+  end
+end

@@ -1,0 +1,197 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 472
+  ClientWidth = 321
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 321.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lbAppName: TLabel
+      Align = Center
+      AutoSize = True
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 120.000000000000000000
+      Size.Height = 54.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Pre'#231'o Baixo Pna'
+      TabOrder = 1
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 321.000000000000000000
+    Size.Height = 415.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Label1'
+      TabOrder = 1
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 6
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 30.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 8
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 286.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Label2: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 128.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Label1'
+      TabOrder = 9
+    end
+    object Edit3: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 10
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 158.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Label3: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 256.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Label1'
+      TabOrder = 11
+    end
+    object Edit4: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 2
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 94.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Edit5: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 4
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 350.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Edit6: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 7
+      TextSettings.Font.Size = 17.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 222.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object Label4: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 64.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Label1'
+      TabOrder = 0
+    end
+    object Label5: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 192.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Label1'
+      TabOrder = 3
+    end
+    object Label6: TLabel
+      Align = Top
+      StyledSettings = [Family, Style, FontColor]
+      Position.Y = 320.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Label1'
+      TabOrder = 5
+    end
+  end
+end
